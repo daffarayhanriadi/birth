@@ -159,7 +159,7 @@ function App() {
       >
         {/* <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav" />
         <source src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg" type="audio/ogg" /> */}
-        <source src="https://github.com/daffarayhanriadi/birth/blob/main/public/song/birthday-song.mp3" type="audio/mpeg" />
+        <source src="../public/song/birthday-song.mp3" type="audio/mpeg" />
         {/* Fallback for browsers that don't support the above formats */}
         Your browser does not support the audio element.
       </audio>
