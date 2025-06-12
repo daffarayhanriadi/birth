@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Comic+Neue:wght@300;400;700&display=swap');
+
+* {
+  font-family: 'Fredoka', 'Comic Neue', cursive;
+}
+
+/* Fun bounce animation */
+@keyframes funBounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-10px); }
+  60% { transform: translateY(-5px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+}
+
+@keyframes rainbow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  33% { transform: translateY(-10px) rotate(2deg); }
+  66% { transform: translateY(-5px) rotate(-2deg); }
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.animate-fun-bounce {
+  animation: funBounce 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+.animate-rainbow {
+  animation: rainbow 3s linear infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-confetti {
+  animation: confetti-fall 3s linear infinite;
+}
+
+/* Custom scrollbar with fun colors */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #fd79a8, #fdcb6e, #6c5ce7);
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #e84393, #f39c12, #9b59b6);
+}
+
+/* Fun hover effects */
+.hover-bounce:hover {
+  animation: funBounce 0.6s ease-in-out;
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* Colorful text gradients */
+.gradient-fun {
+  background: linear-gradient(45deg, #ff6b9d, #ffd93d, #6bcf7f, #4d96ff, #9b59b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 300% 300%;
+  animation: rainbow 2s ease-in-out infinite;
+}
+
+/* Fun shadow effects */
+.fun-shadow {
+  box-shadow: 
+    0 4px 15px rgba(255, 107, 157, 0.3),
+    0 8px 25px rgba(255, 217, 61, 0.2),
+    0 12px 35px rgba(107, 207, 127, 0.1);
+}
+
+.fun-shadow-hover:hover {
+  box-shadow: 
+    0 8px 25px rgba(255, 107, 157, 0.4),
+    0 15px 35px rgba(255, 217, 61, 0.3),
+    0 20px 45px rgba(107, 207, 127, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Border styles */
+.border-3 {
+  border-width: 3px;
+}
+
+.border-4 {
+  border-width: 4px;
+}
+
+.border-5 {
+  border-width: 5px;
+}
+
+/* Fun button styles */
+.btn-party {
+  background: linear-gradient(45deg, #ff6b9d, #ffd93d, #6bcf7f);
+  background-size: 300% 300%;
+  animation: rainbow 3s ease-in-out infinite;
+  transition: all 0.3s ease;
+}
+
+.btn-party:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .text-responsive-xl {
+    font-size: 1.5rem;
+  }
+  
+  .text-responsive-2xl {
+    font-size: 2rem;
+  }
+  
+  .text-responsive-4xl {
+    font-size: 2.5rem;
+  }
+}
+
+/* Fun loading animation */
+@keyframes party-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: scale(1.05);
+    filter: hue-rotate(180deg);
+  }
+}
+
+.animate-party-pulse {
+  animation: party-pulse 2s ease-in-out infinite;
+}
+
+/* Cute emoji animations */
+.emoji-bounce {
+  display: inline-block;
+  animation: funBounce 2s ease-in-out infinite;
+}
+
+.emoji-wiggle {
+  display: inline-block;
+  animation: wiggle 1.5s ease-in-out infinite;
+}
+
+/* Fun card hover effects */
+.card-fun:hover {
+  transform: translateY(-5px) rotate(1deg);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Playful text effects */
+.text-playful {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-fun-shadow {
+  text-shadow: 
+    3px 3px 0px #ff6b9d,
+    6px 6px 0px #ffd93d,
+    9px 9px 0px #6bcf7f;
+}
